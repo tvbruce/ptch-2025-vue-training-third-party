@@ -25,6 +25,98 @@
         </div>
       </div>
 
+      <!-- 官方文件參考 -->
+      <div class="bg-gradient-to-r from-slate-50 to-gray-50 border border-slate-200 rounded-xl p-6 mb-8">
+        <div class="flex items-center mb-4">
+          <div class="w-8 h-8 bg-slate-600 rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-slate-800">📚 綜合技術官方文件參考</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- ElementPlus 參考 -->
+          <div class="bg-white rounded-lg p-4 border border-blue-100 shadow-sm">
+            <div class="flex items-center mb-3">
+              <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2">
+                <span class="text-white text-xs font-bold">E</span>
+              </div>
+              <h3 class="font-semibold text-blue-900">
+                <a href="https://element-plus.org/zh-CN/" target="_blank" rel="noopener noreferrer"
+                  class="hover:text-blue-700 hover:underline text-sm">
+                  ElementPlus 官方文件
+                </a>
+              </h3>
+            </div>
+            <p class="text-blue-700 text-xs mb-2">
+              學習 ElementPlus 組件的 API 和樣式客製化方法
+            </p>
+            <div class="text-xs text-blue-600">
+              <strong>關鍵章節：</strong> 組件、主題、樣式覆蓋
+            </div>
+          </div>
+
+          <!-- PrimeVue 參考 -->
+          <div class="bg-white rounded-lg p-4 border border-purple-100 shadow-sm">
+            <div class="flex items-center mb-3">
+              <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-2">
+                <span class="text-white text-xs font-bold">P</span>
+              </div>
+              <h3 class="font-semibold text-purple-900">
+                <a href="https://primevue.org/setup/" target="_blank" rel="noopener noreferrer"
+                  class="hover:text-purple-700 hover:underline text-sm">
+                  PrimeVue 官方文件
+                </a>
+              </h3>
+            </div>
+            <p class="text-purple-700 text-xs mb-2">
+              了解 PrimeVue 的 Pass Through 和 Unstyled 模式
+            </p>
+            <div class="text-xs text-purple-600">
+              <strong>關鍵章節：</strong> Pass Through、Unstyled Mode
+            </div>
+          </div>
+
+          <!-- TailwindCSS 參考 -->
+          <div class="bg-white rounded-lg p-4 border border-cyan-100 shadow-sm">
+            <div class="flex items-center mb-3">
+              <div class="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center mr-2">
+                <span class="text-white text-xs font-bold">T</span>
+              </div>
+              <h3 class="font-semibold text-cyan-900">
+                <a href="https://v3.tailwindcss.com/" target="_blank" rel="noopener noreferrer"
+                  class="hover:text-cyan-700 hover:underline text-sm">
+                  TailwindCSS 官方文件
+                </a>
+              </h3>
+            </div>
+            <p class="text-cyan-700 text-xs mb-2">
+              掌握 TailwindCSS 的 @apply 指令和客製化技巧
+            </p>
+            <div class="text-xs text-cyan-600">
+              <strong>關鍵章節：</strong> Functions & Directives、Configuration
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 bg-amber-50 border border-amber-200 rounded-lg p-3">
+          <div class="flex items-start space-x-2">
+            <div class="w-4 h-4 bg-amber-500 rounded-full flex items-center justify-center mt-0.5">
+              <span class="text-white text-xs">💡</span>
+            </div>
+            <div>
+              <h4 class="font-medium text-amber-800 text-sm mb-1">學習建議</h4>
+              <p class="text-amber-700 text-xs">
+                建議按順序先閱讀各框架的基礎文件，再回來學習本章節的整合客製化技巧，效果會更好！
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- TailwindCSS 客製化優勢 -->
       <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 p-6 mb-8">
         <h2 class="text-2xl font-bold text-blue-800 mb-4 flex items-center">

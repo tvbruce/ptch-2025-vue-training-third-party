@@ -2,6 +2,65 @@
     <MainLayout>
         <div class="lesson-content">
             <h1 class="section-header">TailwindCSS 應用</h1>
+
+            <!-- 官方文件參考 -->
+            <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-6 mb-8">
+                <div class="flex items-center mb-4">
+                    <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center mr-3">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold text-cyan-800">📚 TailwindCSS 官方文件參考</h2>
+                </div>
+
+                <div class="bg-white rounded-lg p-4 border border-cyan-100">
+                    <div class="flex items-start space-x-3">
+                        <div
+                            class="flex-shrink-0 w-6 h-6 bg-cyan-100 rounded-full flex items-center justify-center mt-1">
+                            <svg class="w-4 h-4 text-cyan-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                <path
+                                    d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-cyan-900 mb-2">
+                                <a href="https://v3.tailwindcss.com/" target="_blank" rel="noopener noreferrer"
+                                    class="hover:text-cyan-700 hover:underline">
+                                    TailwindCSS v3 官方文件
+                                </a>
+                            </h3>
+                            <p class="text-cyan-700 text-sm mb-3">
+                                TailwindCSS 是一個 Utility-First 的 CSS 框架，讓你可以快速建構現代化的用戶介面。
+                                v3 版本帶來 JIT（Just-In-Time）編譯、任意值支援等強大功能。
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                                <div>
+                                    <h4 class="font-medium text-cyan-800 mb-1">🔗 核心概念</h4>
+                                    <ul class="text-cyan-600 space-y-1">
+                                        <li>• Utility-First Fundamentals</li>
+                                        <li>• Responsive Design</li>
+                                        <li>• Hover, Focus & Other States</li>
+                                        <li>• Dark Mode</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-cyan-800 mb-1">⚡ 進階功能</h4>
+                                    <ul class="text-cyan-600 space-y-1">
+                                        <li>• JIT Mode - 即時編譯</li>
+                                        <li>• Arbitrary Values - 任意值</li>
+                                        <li>• Configuration - 客製化配置</li>
+                                        <li>• Plugins - 插件系統</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="subsection">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">🎨 什麼是 TailwindCSS？</h2>
 

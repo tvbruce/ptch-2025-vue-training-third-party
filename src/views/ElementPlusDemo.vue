@@ -25,6 +25,60 @@
         </div>
       </div>
 
+      <!-- 官方文件參考 -->
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-8">
+        <div class="flex items-center mb-4">
+          <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-blue-800">📚 ElementPlus 官方文件參考</h2>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 border border-blue-100">
+          <div class="flex items-start space-x-3">
+            <div class="flex-shrink-0 w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mt-1">
+              <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-semibold text-blue-900 mb-2">
+                <a href="https://element-plus.org/zh-CN/" target="_blank" rel="noopener noreferrer"
+                  class="hover:text-blue-700 hover:underline">
+                  Element Plus 中文官方文件
+                </a>
+              </h3>
+              <p class="text-blue-700 text-sm mb-3">
+                ElementPlus 是 Vue 3 生態中最受歡迎的 UI 元件庫，提供豐富的企業級組件。
+                官方文件提供完整的 API 文檔、設計指南和最佳實踐。
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div>
+                  <h4 class="font-medium text-blue-800 mb-1">🔗 重要章節</h4>
+                  <ul class="text-blue-600 space-y-1">
+                    <li>• 快速開始 - 安裝與配置</li>
+                    <li>• 組件總覽 - 完整組件清單</li>
+                    <li>• 表單組件 - Form、Input、Select 等</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-medium text-blue-800 mb-1">💡 推薦功能</h4>
+                  <ul class="text-blue-600 space-y-1">
+                    <li>• 組件展示 - 互動式範例</li>
+                    <li>• API 參考 - 詳細屬性說明</li>
+                    <li>• 主題客製化 - 樣式調整指南</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- 基礎表單元件 -->
       <div class="demo-section">
         <h2>📝 基礎表單元件</h2>

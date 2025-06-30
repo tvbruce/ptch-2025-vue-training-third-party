@@ -9,6 +9,64 @@
                     以及如何優化構建配置和部署策略。
                 </p>
 
+                <!-- 官方文件參考 -->
+                <div class="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-green-800">📚 Vite 官方文件參考</h2>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-4 border border-green-100">
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                    <path
+                                        d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-green-900 mb-2">
+                                    <a href="https://cn.vite.dev/config/preview-options.html" target="_blank"
+                                        rel="noopener noreferrer" class="hover:text-green-700 hover:underline">
+                                        Vite 中文官方文檔 - 預覽選項配置
+                                    </a>
+                                </h3>
+                                <p class="text-green-700 text-sm mb-3">
+                                    Vite 是新一代前端構建工具，提供極速的開發體驗和優化的生產構建。
+                                    官方文檔包含完整的配置指南、構建選項和部署最佳實踐。
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                                    <div>
+                                        <h4 class="font-medium text-green-800 mb-1">🔗 重要章節</h4>
+                                        <ul class="text-green-600 space-y-1">
+                                            <li>• 配置參考 - 完整配置選項</li>
+                                            <li>• 構建選項 - 生產環境優化</li>
+                                            <li>• 預覽選項 - 本地預覽配置</li>
+                                            <li>• 部署指南 - 各平台部署方案</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-green-800 mb-1">⚡ 核心特色</h4>
+                                        <ul class="text-green-600 space-y-1">
+                                            <li>• ESBuild - 超快的開發伺服器</li>
+                                            <li>• Rollup - 優化的生產構建</li>
+                                            <li>• HMR - 極速熱重載</li>
+                                            <li>• 插件生態 - 豐富的功能擴展</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- 為什麼需要打包 -->
                 <section class="mb-12">
                     <h2 class="text-2xl font-bold mb-6">🎯 為什麼需要打包？</h2>

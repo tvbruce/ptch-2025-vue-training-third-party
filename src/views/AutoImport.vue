@@ -116,6 +116,59 @@
         <div class="ui-library-configs">
           <h3>🎨 UI 組件庫專用配置</h3>
 
+          <!-- 官方文件參考 -->
+          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-xl p-6 mb-6">
+            <div class="flex items-center mb-4">
+              <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center mr-3">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h4 class="text-lg font-bold text-indigo-800">📚 UI 框架官方文件參考</h4>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- ElementPlus 參考 -->
+              <div class="bg-white rounded-lg p-4 border border-blue-100">
+                <div class="flex items-center mb-3">
+                  <div class="w-5 h-5 bg-blue-500 rounded mr-2"></div>
+                  <h5 class="font-semibold text-blue-900">
+                    <a href="https://element-plus.org/zh-CN/" target="_blank" rel="noopener noreferrer"
+                      class="hover:text-blue-700 hover:underline">
+                      ElementPlus 官方文件
+                    </a>
+                  </h5>
+                </div>
+                <p class="text-blue-700 text-sm mb-2">
+                  查看完整的 Element Plus 組件 API 和使用範例
+                </p>
+                <div class="text-xs text-blue-600">
+                  <strong>推薦章節：</strong> 快速開始、組件總覽、按需導入
+                </div>
+              </div>
+
+              <!-- PrimeVue 參考 -->
+              <div class="bg-white rounded-lg p-4 border border-purple-100">
+                <div class="flex items-center mb-3">
+                  <div class="w-5 h-5 bg-purple-500 rounded mr-2"></div>
+                  <h5 class="font-semibold text-purple-900">
+                    <a href="https://primevue.org/setup/" target="_blank" rel="noopener noreferrer"
+                      class="hover:text-purple-700 hover:underline">
+                      PrimeVue 官方文件
+                    </a>
+                  </h5>
+                </div>
+                <p class="text-purple-700 text-sm mb-2">
+                  了解 PrimeVue 的安裝配置和自動導入設定
+                </p>
+                <div class="text-xs text-purple-600">
+                  <strong>推薦章節：</strong> Setup、Auto Import、Configuration
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="library-section">
             <h4>📘 ElementPlus 配置</h4>
             <CodeBlock :code="elementPlusConfigExample" language="typescript" filename="vite.config.ts (ElementPlus 部分)"

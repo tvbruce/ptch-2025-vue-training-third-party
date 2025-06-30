@@ -25,6 +25,62 @@
         </div>
       </div>
 
+      <!-- 官方文件參考 -->
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-6 mb-8">
+        <div class="flex items-center mb-4">
+          <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-purple-800">📚 PrimeVue 官方文件參考</h2>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 border border-purple-100">
+          <div class="flex items-start space-x-3">
+            <div class="flex-shrink-0 w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mt-1">
+              <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-semibold text-purple-900 mb-2">
+                <a href="https://primevue.org/setup/" target="_blank" rel="noopener noreferrer"
+                  class="hover:text-purple-700 hover:underline">
+                  PrimeVue 官方文件
+                </a>
+              </h3>
+              <p class="text-purple-700 text-sm mb-3">
+                PrimeVue 是一個功能豐富的 Vue.js UI 元件庫，提供企業級的設計系統和強大的數據處理組件。
+                官方文件包含完整的安裝指南、組件文檔和進階功能說明。
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div>
+                  <h4 class="font-medium text-purple-800 mb-1">🔗 重要章節</h4>
+                  <ul class="text-purple-600 space-y-1">
+                    <li>• Setup - 安裝與基礎配置</li>
+                    <li>• Components - 完整組件參考</li>
+                    <li>• Theming - 主題系統說明</li>
+                    <li>• Pass Through - 樣式客製化</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-medium text-purple-800 mb-1">⭐ 特色功能</h4>
+                  <ul class="text-purple-600 space-y-1">
+                    <li>• Unstyled Mode - 無樣式模式</li>
+                    <li>• DataTable - 強大的數據表格</li>
+                    <li>• Charts - 豐富的圖表組件</li>
+                    <li>• Templates - 專業模板系統</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- 基礎表單元件 -->
       <div class="demo-section">
         <h2>📝 基礎表單元件</h2>
@@ -174,7 +230,7 @@
         </div>
 
         <div class="component-demo">
-          <h3>��️ 滑桿 (Slider)</h3>
+          <h3>️ 滑桿 (Slider)</h3>
           <div class="demo-showcase">
             <div class="demo-preview">
               <div class="pain-assessment">
