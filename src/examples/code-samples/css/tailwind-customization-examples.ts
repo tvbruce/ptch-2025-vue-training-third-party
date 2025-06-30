@@ -351,7 +351,123 @@ const medicalSelectPT = {
 }
 </script>`
 
-export const traditionalVsTailwindExample = `<!-- 傳統 CSS 覆蓋 vs TailwindCSS 對比 -->
+// ElementPlus 專用：傳統 CSS 覆蓋 vs TailwindCSS 對比
+export const elementTraditionalVsTailwindExample = `<!-- ElementPlus：傳統 CSS 覆蓋 vs TailwindCSS 客製化對比 -->
+
+<!-- ❌ 傳統 CSS 覆蓋方式：複雜且難維護 -->
+<template>
+  <div class="traditional-element-form">
+    <div class="form-group">
+      <label>病患姓名（傳統覆蓋）</label>
+      <el-input
+        v-model="patientName"
+        placeholder="請輸入病患姓名"
+        class="traditional-custom-input"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>科別選擇（傳統覆蓋）</label>
+      <el-select
+        v-model="department"
+        placeholder="請選擇科別"
+        class="traditional-custom-select"
+      >
+        <el-option label="急診科" value="emergency" />
+        <el-option label="內科" value="internal" />
+      </el-select>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+/* 傳統方式：需要深入了解組件結構並大量使用 !important */
+.traditional-element-form :deep(.traditional-custom-input .el-input__wrapper) {
+  border: 3px solid #00acc1 !important;
+  border-radius: 12px !important;
+  background: linear-gradient(145deg, #e0f7fa, #f1f8e9) !important;
+  box-shadow: 0 4px 12px rgba(0, 172, 193, 0.25) !important;
+  transition: all 0.3s ease !important;
+}
+
+.traditional-element-form :deep(.traditional-custom-input .el-input__wrapper:hover) {
+  border-color: #00838f !important;
+  box-shadow: 0 6px 16px rgba(0, 172, 193, 0.35) !important;
+  transform: translateY(-1px) !important;
+}
+
+.traditional-element-form :deep(.traditional-custom-input .el-input__wrapper.is-focus) {
+  border-color: #006064 !important;
+  box-shadow: 0 0 0 4px rgba(0, 172, 193, 0.2) !important;
+}
+
+.traditional-element-form :deep(.traditional-custom-select .el-select__wrapper) {
+  border: 3px solid #673ab7 !important;
+  border-radius: 15px !important;
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7) !important;
+  box-shadow: 0 4px 12px rgba(103, 58, 183, 0.25) !important;
+}
+
+.traditional-element-form :deep(.traditional-custom-select .el-select__wrapper:hover) {
+  border-color: #512da8 !important;
+  box-shadow: 0 6px 16px rgba(103, 58, 183, 0.35) !important;
+}
+/* 需要 25+ 行 CSS 且大量 !important，難以維護 */
+</style>
+
+<!-- ✅ TailwindCSS 方式：簡潔且易維護 -->
+<template>
+  <div class="tailwind-element-form space-y-4">
+    <div class="form-group">
+      <label class="block text-sm font-medium text-gray-700 mb-2">
+        病患姓名（TailwindCSS）
+      </label>
+      <el-input
+        v-model="patientName"
+        placeholder="請輸入病患姓名"
+        class="tailwind-custom-input"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="block text-sm font-medium text-gray-700 mb-2">
+        科別選擇（TailwindCSS）
+      </label>
+      <el-select
+        v-model="department"
+        placeholder="請選擇科別"
+        class="tailwind-custom-select w-full"
+      >
+        <el-option label="急診科" value="emergency" />
+        <el-option label="內科" value="internal" />
+      </el-select>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+/* TailwindCSS 方式：使用 @apply 指令，簡潔且易維護 */
+.tailwind-custom-input :deep(.el-input__wrapper) {
+  @apply border-2 border-cyan-200 rounded-xl bg-gradient-to-r from-cyan-50 to-teal-50;
+  @apply hover:border-cyan-300 hover:shadow-lg hover:-translate-y-0.5;
+  @apply focus-within:border-cyan-500 focus-within:ring-4 focus-within:ring-cyan-500/20;
+  @apply transition-all duration-200;
+}
+
+.tailwind-custom-input :deep(.el-input__inner) {
+  @apply font-medium text-gray-800;
+}
+
+.tailwind-custom-select :deep(.el-select__wrapper) {
+  @apply border-2 border-purple-200 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50;
+  @apply hover:border-purple-300 hover:shadow-lg hover:-translate-y-0.5;
+  @apply focus-within:border-purple-500 focus-within:ring-4 focus-within:ring-purple-500/20;
+  @apply transition-all duration-200;
+}
+/* 只需要 12 行 CSS，無需 !important，基於 Tailwind 設計系統 */
+</style>`
+
+export const traditionalVsTailwindExample = `<!-- 完整對比：傳統 CSS 覆蓋 vs TailwindCSS 客製化 -->
 
 <!-- ❌ 傳統方式：需要大量 CSS 覆蓋 -->
 <template>

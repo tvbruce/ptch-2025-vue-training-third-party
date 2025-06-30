@@ -116,12 +116,13 @@
                       </el-select>
                     </div>
                   </div>
-                  <p class="method-note tailwind-note">只需 8 行 CSS 且無需 !important</p>
+                  <p class="method-note tailwind-note">使用 TailwindCSS @apply 指令</p>
                 </div>
               </div>
 
               <div class="demo-code">
-                <CodeBlock :code="elementTailwindInputExample" language="vue" filename="ElementPlusTailwind.vue"
+                <h4 class="text-lg font-semibold mb-4 text-center">ElementPlus 程式碼實作對比</h4>
+                <CodeBlock :code="elementTraditionalVsTailwindExample" language="vue" filename="ElementPlus客製化對比.vue"
                   :show-copy="true" />
               </div>
             </div>
@@ -372,7 +373,7 @@
           <Transition name="demo-content">
             <div class="demo-showcase" v-show="!collapsedDemos.comparisonDemo">
               <div class="demo-code">
-                <CodeBlock :code="traditionalVsTailwindExample" language="vue" filename="ComparisonDemo.vue"
+                <CodeBlock :code="elementTraditionalVsTailwindExample" language="vue" filename="ElementPlus完整對比.vue"
                   :show-copy="true" />
               </div>
 
@@ -457,11 +458,10 @@ import { ref } from 'vue'
 import MainLayout from '@/layouts/MainLayout.vue'
 import CodeBlock from '@/components/shared/CodeBlock.vue'
 import {
-  elementTailwindInputExample,
   elementTailwindVitalExample,
   elementTailwindTriageExample,
+  elementTraditionalVsTailwindExample,
   primeVueTailwindExample,
-  traditionalVsTailwindExample,
   tailwindAdvantagesExample
 } from '@/examples/code-samples/css/tailwind-customization-examples'
 
