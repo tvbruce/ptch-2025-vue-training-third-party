@@ -596,7 +596,7 @@ export const primeUnstyledTriageCode = `<template>
       <div class="medical-triage-group">
         <div v-for="level in triageLevels" :key="level.value" class="medical-triage-option">
           <RadioButton
-            :id="\`unstyled-\${level.value}\`"
+            :inputId="\`unstyled-\${level.value}\`"
             v-model="primeForm.triageLevel"
             :value="level.value"
             unstyled
@@ -875,7 +875,7 @@ export const primeTriageCustomCode = `<template>
       <div class="medical-triage-group">
         <div v-for="level in triageLevels" :key="level.value" class="medical-triage-option">
           <RadioButton
-            :id="\`custom-\${level.value}\`"
+            :inputId="\`custom-\${level.value}\`"
             v-model="primeForm.triageLevel"
             :value="level.value"
             class="medical-radio"

@@ -128,13 +128,13 @@ export const calendarExampleCode = `<template>
     <!-- 日期時間選擇器 -->
     <div class="form-row">
       <label for="arrival-date">到達時間</label>
-      <Calendar
+      <DatePicker
         id="arrival-date"
         v-model="patientForm.arrivalDate"
-        show-time
-        hour-format="24"
+        showTime
+        hourFormat="24"
         placeholder="選擇到達時間"
-        date-format="yy-mm-dd"
+        dateFormat="yy-mm-dd"
         class="w-full"
       />
     </div>
@@ -142,11 +142,11 @@ export const calendarExampleCode = `<template>
     <!-- 純日期選擇器 -->
     <div class="form-row">
       <label for="lmp-date">LMP 日期</label>
-      <Calendar
+      <DatePicker
         id="lmp-date"
         v-model="patientForm.lmpDate"
         placeholder="選擇 LMP 日期"
-        date-format="yy-mm-dd"
+        dateFormat="yy-mm-dd"
         class="w-full"
       />
     </div>
@@ -154,11 +154,11 @@ export const calendarExampleCode = `<template>
     <!-- 時間選擇器 -->
     <div class="form-row">
       <label for="onset-time">發病時間</label>
-      <Calendar
+      <DatePicker
         id="onset-time"
         v-model="patientForm.onsetTime"
-        time-only
-        hour-format="24"
+        timeOnly
+        hourFormat="24"
         placeholder="選擇發病時間"
         class="w-full"
       />
@@ -252,7 +252,7 @@ export const radioButtonExampleCode = `<template>
     <div class="triage-radio-group">
       <div v-for="level in triageLevels" :key="level.value" class="triage-option">
         <RadioButton
-          :id="\`triage-\${level.value}\`"
+          :inputId="\`triage-\${level.value}\`"
           v-model="patientForm.triageLevel"
           :value="level.value"
         />

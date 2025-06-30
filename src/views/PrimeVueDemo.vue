@@ -83,22 +83,22 @@
         </div>
 
         <div class="component-demo">
-          <h3>📅 日期時間選擇器 (Calendar)</h3>
+          <h3>📅 日期時間選擇器 (DatePicker)</h3>
           <div class="demo-showcase">
             <div class="demo-preview">
               <div class="form-row">
                 <label for="arrival-date">到達時間</label>
-                <Calendar id="arrival-date" v-model="patientForm.arrivalDate" show-time hour-format="24"
-                  placeholder="選擇到達時間" date-format="yy-mm-dd" class="w-full" />
+                <DatePicker id="arrival-date" v-model="patientForm.arrivalDate" showTime hourFormat="24"
+                  placeholder="選擇到達時間" dateFormat="yy-mm-dd" class="w-full" />
               </div>
               <div class="form-row">
                 <label for="lmp-date">LMP 日期</label>
-                <Calendar id="lmp-date" v-model="patientForm.lmpDate" placeholder="選擇 LMP 日期" date-format="yy-mm-dd"
+                <DatePicker id="lmp-date" v-model="patientForm.lmpDate" placeholder="選擇 LMP 日期" dateFormat="yy-mm-dd"
                   class="w-full" />
               </div>
               <div class="form-row">
                 <label for="onset-time">發病時間</label>
-                <Calendar id="onset-time" v-model="patientForm.onsetTime" time-only hour-format="24"
+                <DatePicker id="onset-time" v-model="patientForm.onsetTime" timeOnly hourFormat="24"
                   placeholder="選擇發病時間" class="w-full" />
               </div>
             </div>
@@ -158,7 +158,8 @@
                 <h4>檢傷分級</h4>
                 <div class="triage-radio-group">
                   <div v-for="level in triageLevels" :key="level.value" class="triage-option">
-                    <RadioButton :id="`triage-${level.value}`" v-model="patientForm.triageLevel" :value="level.value" />
+                    <RadioButton :inputId="`triage-${level.value}`" v-model="patientForm.triageLevel"
+                      :value="level.value" />
                     <label :for="`triage-${level.value}`" :class="`triage-label triage-${level.value}`">
                       <Tag :severity="level.severity" :value="level.label" />
                     </label>
@@ -399,7 +400,7 @@
 
                 <div class="form-group">
                   <label for="form-arrival">到達時間</label>
-                  <Calendar id="form-arrival" v-model="patientForm.arrivalDate" show-time hour-format="24"
+                  <DatePicker id="form-arrival" v-model="patientForm.arrivalDate" showTime hourFormat="24"
                     placeholder="選擇到達時間" />
                 </div>
 
@@ -413,7 +414,7 @@
                   <label>檢傷分級</label>
                   <div class="triage-selection">
                     <div v-for="level in triageLevels" :key="level.value" class="triage-option">
-                      <RadioButton :id="`form-triage-${level.value}`" v-model="patientForm.triageLevel"
+                      <RadioButton :inputId="`form-triage-${level.value}`" v-model="patientForm.triageLevel"
                         :value="level.value" />
                       <label :for="`form-triage-${level.value}`">
                         <Tag :severity="level.severity" :value="level.label" />
